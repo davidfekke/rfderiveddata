@@ -1,0 +1,41 @@
+{
+  "name": "rfderiveddata",
+  "description": "A command to removed the DerivedData folder used by Xcode",
+  "version": "1.0.0",
+  "author": "David Fekke @davidfekke",
+  "bin": {
+    "rfderiveddata": "./bin/run"
+  },
+  "bugs": "https://github.com/davidfekke/rfderiveddata/issues",
+  "dependencies": {
+    "@oclif/command": "^1.7.0",
+    "@oclif/config": "^1.16.0",
+    "@oclif/plugin-help": "^3.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/davidfekke/rfderiveddata",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "rfderiveddata"
+  },
+  "repository": "davidfekke/rfderiveddata",
+  "scripts": {
+    "prepack": "oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
